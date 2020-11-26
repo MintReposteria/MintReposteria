@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" contect= "ie=edge">
+<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Noto+Sans+JP:wght@100&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <title>Mint</title>
+</head>
+<body>
+    
+    
+    <div class="container">
+            <nav>
+            
+                <input type="checkbox" id="nav" class="hidden">
+                <label for="nav" class="nav-btn">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </label>
+                <div class="logo">
+                    <a href="#"> Mint Repostería</a>
+                </div>
+                <div class="nav-wrapper">
+                    <ul>
+                        <li><a href="#">Conócenos</a></li>
+                        <li><a href="reposteria.html">Repostería</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li> <a href="https://www.instagram.com/reposteria_mint/"> <img src="images/mint-ig.png" width="20px" height="20px" id="ig"> </a></li>
+                    </ul>
+                </div>
+            </nav>
+    
+    </div>
+    
+     <div class="portada">
+     <img src="images/portada-2.jpg"  style="max-width:100%;height:auto">
+
+     </div>
+    
+ 
+    
+<h1> Endulzando tus mejores momentos </h1>  
+
+    
+    
+      <div class="example">
+
+Todo comenzó en el año 2007 en la cocina de la familia Arias, en donde Jimena se esmeraba en crear postres deliciosos para ocasiones especiales, como cumpleaños de sus amigos, familiares e incluso para ella misma. Siempre con el objetivo de regalar un momento dulce, en el que la gente pudiera disfrutar de la convivencia y al mismo tiempo experimentar sabores y texturas únicas para el paladar. Con el paso de los años, Jimena, la fundadora, se dio cuenta de que sus postres recibían comentarios favorecedores y la gente mostraba gran interés en probar más de sus creaciones. 
+    <br>
+          <br>
+Por ese motivo, en el año 2016, cuando Jimena comienza a estudiar negocios, se da cuenta de que puede combinar sus dos más grandes pasiones y decide fundar Mint Repostería. Desde ese entonces, toda la magia sigue sucediendo dentro de la misma cocina en dónde todo comenzó, con la misma pasión, amor y el propósito de formar parte de momentos especiales, aportando un toque dulce y delicioso.
+          
+    </div>
+
+
+    
+    
+    <br> 
+    
+    
+    
+
+    <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="images/brownkie1.jpg" style="width:100%">
+  <div class="text">Brownckie Cake</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="images/avena2.jpg" style="width:100%">
+  <div class="text">Galletas de Avena</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="images/oreo3.jpg" style="width:100%">
+  <div class="text">Pay Helado de Oreo</div>
+</div>
+    
+    <div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="images/platano2.jpg"style="width:100%">
+  <div class="text">Panqué de Plátano</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+    
+     
+    
+    <div class="row">
+  <div class="column left">  <h2>Nuestra Misión</h2>
+        <p>Promover momentos de felicidad complaciendo los paladares de nuestros clientes, mediante una experiencia única y especial, a través de nuestras deliciosas recetas creadas con pasión y amor.</p></div>
+  <div class="column right">     <img src="images/mint-logo.png" width="150px" height="auto"></div>
+</div>
+    
+    
+    
+
+    
+
+<footer>
+    
+    <div class="mint">  Mint Repostería </div>
+    
+    <div class="correo"> mintreposteria@gmail.com </div>
+</footer>
+
+    
+   
+    
+    
+</body>  
+</html>
